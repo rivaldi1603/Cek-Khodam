@@ -24,8 +24,10 @@ public class KhodamController {
     @PostMapping("/check")
     public String checkKhodam(@RequestParam("nama") String nama, Model model) {
         String khodam = khodamService.cekKhodam(nama);
+        String warning = khodamService.cekWarning(nama);
         model.addAttribute("nama", nama);
         model.addAttribute("khodam", khodam);
+        model.addAttribute("warning", warning);
         return "index"; // Kembali ke halaman yang sama dengan hasil
     }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cek Khodam V2.0 - Cyberpunk Edition</title>
+    <title>Cek Khodam</title>
     <link rel="stylesheet" th:href="@{/css/style.css}">
     <!-- Google Fonts for Mystical Cyberpunk Feel -->
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;600;800&display=swap"
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="card">
             <h1>🔮 CEK KHODAM 🔮</h1>
-            <p class="subtitle">DATABASE SPIRITUAL VERSI 2.0</p>
+            <p class="subtitle">CEK KHODAM SPIRITUAL</p>
 
             <!-- Input Form -->
             <form id="khodamForm" th:action="@{/check}" method="post">
@@ -31,20 +31,20 @@
                         style="color:var(--neon-cyan); font-weight:bold;"></span> adalah:</p>
                 <div class="khodam-name" th:text="${khodam}"></div>
                 <div class="fun-fact">
-                    ⚠️ <strong>WARNING:</strong> Keberadaan Khodam ini 99.9% Akurat secara ngawur.
+                    ⚠️ <strong>WARNING:</strong> <span th:text="${warning}"></span>
                 </div>
-                <a href="/" class="reset-btn">[ SCAN ULANG ]</a>
+                <a href="/" class="reset-btn">[ CEK ULANG ]</a>
             </div>
         </div>
 
         <footer style="margin-top:20px; font-size:0.7em; opacity:0.5; text-align:center;">
-            &copy; 2024 Dukun Coding Cyberlabs. Pure CSS & Java Magic.
+            2026 Developer ecek ecek
         </footer>
     </div>
 
     <!-- Loader Overlay (Hidden by Default) -->
     <div id="loader-overlay">
-        <div class="loader-text">SCANNING SOUL DATA...</div>
+        <div class="loader-text">NTARRRRRRRRRR...</div>
         <div class="loader-scan">
             <div class="loader-bar"></div>
         </div>
